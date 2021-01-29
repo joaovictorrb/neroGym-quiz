@@ -1,0 +1,20 @@
+{
+    "bg": "https://images.wallpaperscraft.com/image/gym_disks_weight_bodybuilding_118105_2560x1440.jpg",
+    "title": "Nero Academia",
+    "desciption": "Voce sabe os beneficios que exercicios lhe proporcionam?",
+    "questions": [],
+    "external": [],
+    "theme": {
+        "colors": {
+            "primary": "#424242",
+            "primaryLight": "#6d6d6d",
+            "primaryDark": "#1b1b1b",
+            "secondary": "#ef6c00",
+            "secondaryLight": "#ff9d3f",
+            "secondaryDark": "#b53d00",
+            "white": "#FFF"
+        },
+        "borderRadius": "4.5px" 
+    }
+
+}
