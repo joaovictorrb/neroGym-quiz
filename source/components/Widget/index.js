@@ -1,52 +1,74 @@
 import styled from 'styled-components'
 
 export const Widget = styled.div`
-margin-top: 24px;
-margin-bottom: 24px;
-border: 1px solid ${({ theme }) => theme.colors.primary};
-background-color: ${({ theme }) => theme.colors.primary};
-opacity: 87.5%;
-border-radius: 4.5px;
-overflow: hidden;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 4.5px;
+  overflow: hidden;
 
-h1, h2, h3 {
-  font-size: 20px;
-  font-weight: 700px;
-  line-height: 1;
-  margin-bottom: 0;
-}
+  h1, h2, h3 {
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
 
-p {
-  font-size: 16px;
-  font-weight: 400px;
-  line-height: 1;
-}
+  p {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 1;
+  }
+`
+
+Widget.Background = styled.div`
+  opacity: 87.5%;
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary};
 `
 
 Widget.Header = styled.header`
-display: flex;
-justify-content: flex-start;
-align-items: center;
-padding: 18px 32px;
-background-color: ${({ theme }) => theme.colors.secondary};
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 18px 32px;
+  background-color: ${({ theme }) => theme.colors.secondary};
 
-* {
-  margin: 0;
-}
+  * {
+    margin: 0;
+  }
 `
 
 Widget.Content = styled.header`
-padding: 24px 32px 32px 32px;
-& > *:first-child {
-  margin-top: 0;
-}
-& > *::last-child {
-  margin-bottom: 0;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
+  padding: 24px 32px 32px 32px;
+  & > *:first-child {
+    margin-top: 0;
+  }
+  & > *::last-child {
+    margin-bottom: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 `
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+`;
+
 
 export default Widget;

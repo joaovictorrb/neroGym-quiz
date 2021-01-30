@@ -1,20 +1,68 @@
 {
-    "bg": "https://images.wallpaperscraft.com/image/gym_disks_weight_bodybuilding_118105_2560x1440.jpg",
-    "title": "Nero Academia",
-    "desciption": "Voce sabe os beneficios que exercicios lhe proporcionam?",
-    "questions": [],
-    "external": [],
-    "theme": {
-        "colors": {
-            "primary": "#424242",
-            "primaryLight": "#6d6d6d",
-            "primaryDark": "#1b1b1b",
-            "secondary": "#ef6c00",
-            "secondaryLight": "#ff9d3f",
-            "secondaryDark": "#b53d00",
-            "white": "#FFF"
-        },
-        "borderRadius": "4.5px" 
+  "bg": "https://images.wallpaperscraft.com/image/gym_disks_weight_bodybuilding_118105_2560x1440.jpg",
+  "title": "Nero Gym",
+  "desciption": "Have you ever thought about the benefits of a active life?",
+  "questions": [
+    {
+      "image": "https://i.pinimg.com/originals/a7/78/19/a778193d04758b169fca966fe0655645.gif",
+      "title": "Which one of the following affirmatives represents a benefit of cardio training",
+      "description": "There is only one answer!",
+      "answer": 0,
+      "alternatives": [
+        "Strenghtens your heart",
+        "Weight gain",
+        "Weakens your lungs capacity",
+        "Makes you smarter"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/4bjIKBOWUnVPICCzJc/giphy.gif",
+      "title": "Which one of the following affirmatives represents a benefit of strenght training",
+      "description": "There is only one answer!",
+      "answer": 2,
+      "alternatives": [
+        "Less muscle mass",
+        "You wont gain any weight",
+        "Stronger bones",
+        "Less joint flexibility"
+      ]
+    },
+    {
+      "image": "https://media0.giphy.com/media/3ornk8qaF9ytl9zmY8/giphy.gif",
+      "title": "Before exercises, can streching, in long term, improve posture, mobility, back pain and prevent injuries?",
+      "description": "Easy now, Yes/No!",
+      "answer": 0,
+      "alternatives": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "image": "https://media.tenor.com/images/44d0f95a1d37e09c4a46b505d42f7511/tenor.gif",
+      "title": "Can you guess correcly which one of the affirmatives is a strenght exercise?",
+      "description": "There is only one answer!",
+      "answer": 2,
+      "alternatives": [
+        "Run",
+        "Burpee",
+        "Deadlift"
+      ]
     }
-
+  ],
+  "external": [
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://cassinoflix.vercel.app/"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#424242",
+      "primaryLight": "#6d6d6d",
+      "primaryDark": "#1b1b1b",
+      "secondary": "#ef6c00",
+      "secondaryLight": "#ff9d3f",
+      "secondaryDark": "#b53d00",
+      "white": "#FFF"
+    },
+    "borderRadius": "4.5px"
+  }
 }
