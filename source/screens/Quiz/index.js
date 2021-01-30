@@ -8,7 +8,7 @@ import AlternativesForm from '../../components/AlternativeForm'
 import Button from '../../components/Button'
 import BackLinkArrow from '../../components/BackLinkArrow'
 
-import loadingAnimation from './animations/loading.json'
+import loadingAnimation from './Animations/loading.json'
 
 function ResultWidget({ results }) {
   return (
@@ -31,7 +31,7 @@ function ResultWidget({ results }) {
               #
               {index + 1}
               {' '}
-              Resultado:
+              Result:
               {result === true
                 ? 'Right'
                 : 'Wrong'}
