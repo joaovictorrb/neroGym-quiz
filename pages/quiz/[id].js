@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import QuizScreen from '../../src/screens/Quiz';
+import QuizScreen from '../../source/screens/Quiz';
 
 export default function NeroQuiz({ externalDb }) {
   return (

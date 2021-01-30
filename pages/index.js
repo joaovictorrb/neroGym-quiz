@@ -15,11 +15,14 @@ import Input from '../source/components/Input'
 import Button from '../source/components/Button'
 
 export default function Home() {
+  const router = useRouter()
+  const [name, setName] = React.useState('')
+
   return (
     <QuizBackground backgroundImage = {db.bg}>
       <Head>
         <title>
-          AluraQuiz -
+          Nero Quiz -
           {db.title}
         </title>
       </Head>
@@ -42,9 +45,9 @@ export default function Home() {
             <Widget.Content>
               <p>{db.description}</p>
               <form onSubmit={function (eventInfo) {
-                eventInfo.preventDefault();
-                router.push(`/quiz?name=${name}`);
-                console.log('Making a submission through react.');
+                eventInfo.preventDefault()
+                router.push(`/quiz?name=${name}`)
+                console.log('Making a submission through react.')
               }}
               >
                 <Input
@@ -54,7 +57,7 @@ export default function Home() {
                   value={name}
                 />
                 <Button type="submit" disabled={name.length === 0}>
-                  {`Play ${name}`}
+                  {`Playing as ${name}`}
                 </Button>
               </form>
             </Widget.Content>
@@ -73,7 +76,7 @@ export default function Home() {
         >
           <Widget.Background>
             <Widget.Content>
-              <h1>Quizes</h1>
+              <h1>Project's of mine</h1>
 
               <ul>
                 {db.external.map((externalLink) => {
@@ -81,7 +84,7 @@ export default function Home() {
                     .replace(/\//g, '')
                     .replace('https:', '')
                     .replace('.vercel.app', '')
-                    .split('.');
+                    .split('.')
 
                   return (
                     <li key={externalLink}>
@@ -92,7 +95,7 @@ export default function Home() {
                         {`${githubUser}/${projectName}`}
                       </Widget.Topic>
                     </li>
-                  );
+                  )
                 })}
               </ul>
             </Widget.Content>

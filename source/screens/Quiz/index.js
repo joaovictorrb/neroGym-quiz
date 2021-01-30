@@ -14,7 +14,7 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resultado:
+        Results:
       </Widget.Header>
 
       <Widget.Content>
@@ -80,7 +80,7 @@ function QuestionWidget({
       <Widget.Header>
         <BackLinkArrow href="/" />
         <h3>
-          {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
+          {`Question: ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
       </Widget.Header>
 
@@ -102,8 +102,8 @@ function QuestionWidget({
         </p>
 
         <AlternativesForm
-          onSubmit={(infosDoEvento) => {
-            infosDoEvento.preventDefault()
+          onSubmit={(eventInfo) => {
+            eventInfo.preventDefault()
             setIsQuestionSubmited(true)
             setTimeout(() => {
               addResult(isCorrect)
